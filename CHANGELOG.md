@@ -5,6 +5,10 @@ This project adheres to popular [Semantic Versioning](http://semver.org/) and [K
 ## [Unreleased]
 
 ## 0.1.0 - 2016-05-09
+### Changed
+* `README.md` info updated.
+
+## 0.1.0 - 2016-05-09
 ### Added
-* `CHANGELOG`, `README` and `.gitignore` files added
+* `CHANGELOG.md`, `README.md` and `.gitignore` files added
 * `LICENSE` file added
