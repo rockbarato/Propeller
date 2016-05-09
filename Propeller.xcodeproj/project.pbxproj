@@ -22,6 +22,8 @@
 		DC4DAF251CE0E1F00022128C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC4DAF281CE0E1F00022128C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC4DAF2A1CE0E1F00022128C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC4DAF301CE0E2940022128C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DC4DAF321CE0E3730022128C /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,8 @@
 		DC4DAF121CE0E1F00022128C = {
 			isa = PBXGroup;
 			children = (
+				DC4DAF301CE0E2940022128C /* README.md */,
+				DC4DAF321CE0E3730022128C /* CHANGELOG.md */,
 				DC4DAF1D1CE0E1F00022128C /* Propeller */,
 				DC4DAF1C1CE0E1F00022128C /* Products */,
 			);
@@ -74,6 +78,7 @@
 				DC4DAF171CE0E1F00022128C /* Sources */,
 				DC4DAF181CE0E1F00022128C /* Frameworks */,
 				DC4DAF191CE0E1F00022128C /* Resources */,
+				DC4DAF341CE0E6B60022128C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,6 +134,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DC4DAF341CE0E6B60022128C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DC4DAF171CE0E1F00022128C /* Sources */ = {
