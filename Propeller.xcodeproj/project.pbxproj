@@ -12,6 +12,7 @@
 		DC4DAF241CE0E1F00022128C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4DAF221CE0E1F00022128C /* Main.storyboard */; };
 		DC4DAF261CE0E1F00022128C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4DAF251CE0E1F00022128C /* Assets.xcassets */; };
 		DC4DAF291CE0E1F00022128C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4DAF271CE0E1F00022128C /* LaunchScreen.storyboard */; };
+		DC4DAF361CE103950022128C /* Propeller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DAF351CE103950022128C /* Propeller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DC4DAF2A1CE0E1F00022128C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC4DAF301CE0E2940022128C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DC4DAF321CE0E3730022128C /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		DC4DAF351CE103950022128C /* Propeller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Propeller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		DC4DAF1D1CE0E1F00022128C /* Propeller */ = {
 			isa = PBXGroup;
 			children = (
+				DC4DAF351CE103950022128C /* Propeller.swift */,
 				DC4DAF1E1CE0E1F00022128C /* AppDelegate.swift */,
 				DC4DAF201CE0E1F00022128C /* ViewController.swift */,
 				DC4DAF221CE0E1F00022128C /* Main.storyboard */,
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC4DAF211CE0E1F00022128C /* ViewController.swift in Sources */,
+				DC4DAF361CE103950022128C /* Propeller.swift in Sources */,
 				DC4DAF1F1CE0E1F00022128C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
