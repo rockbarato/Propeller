@@ -8,11 +8,12 @@
 
 import UIKit
 
+/// Propeller es una clase el cual sirve para desplegar un ActivityIndicator dentro un UIButton al ser presionado
 class Propeller: UIButton {
 	
 	// MARK: - Properties
-	let helix = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
-	var legend:String?
+	let helix = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+	var legend: String?
 	var loading: Bool = false
 	
 	// MARK: - Initializers
@@ -26,24 +27,28 @@ class Propeller: UIButton {
 		
 		legend = self.currentTitle
 		
+		let width = self.frame.width
+		let height = self.frame.height
+		
 		helix.frame = self.frame
-		helix.center = CGPointMake(CGRectGetWidth(self.frame) / 2, CGRectGetHeight(self.frame) / 2)
+		helix.center = CGPoint(x: (width / 2), y: (height / 2))
 		
 		// Configure State
 		self.loading = false
 		
 	}
 	
-	func startAnimating(indicatorStyle:UIActivityIndicatorViewStyle = .Gray) {
-		self.setTitle("", forState: .Normal)
-		self.enabled = false
+	// MARK: - Show/Hide
+	func startAnimating(_ indicatorStyle: UIActivityIndicatorViewStyle = .gray) {
+		self.setTitle(nil, for: UIControlState())
+		self.isEnabled = false
 		helix.startAnimating()
 		self.addSubview(helix)
 	}
 	
 	func stopAnimating() {
-		self.setTitle(legend, forState: .Normal)
-		self.enabled = true
+		self.setTitle(legend, for: UIControlState())
+		self.isEnabled = true
 		helix.removeFromSuperview()
 	}
 }

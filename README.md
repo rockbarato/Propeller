@@ -3,7 +3,7 @@ Propeller
 
 [![License](https://img.shields.io/github/license/rockbarato/Propeller.svg)](http://opensource.org/licenses/MIT)
 ![Plaform](https://img.shields.io/badge/platform-iOS-2886FD.svg)
-![Language](https://img.shields.io/badge/language-Swift%202-F48041.svg)
+![Language](https://img.shields.io/badge/language-Swift%204-F48041.svg)
 [![Tag](https://img.shields.io/github/tag/rockbarato/Propeller.svg)](https://github.com/rockbarato/Propeller)
 
 
@@ -13,7 +13,7 @@ You can simply drag and drop the source files directly into your Xcode project.
 
 ## Requirements
 
-* iOS 7.0 and above
+* iOS 8.0 and above
 
 ## Usage
 
@@ -24,7 +24,7 @@ muhButton.startAnimating()
 ```
 Stop.
 
-``````swift
+```swift
 muhButton.stopAnimating()
 ```
 

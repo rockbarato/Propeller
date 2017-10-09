@@ -16,17 +16,11 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		muhButton.addTarget(self, action: #selector(showActivityIndicator), forControlEvents: .TouchUpInside)
+		muhButton.addTarget(self, action: #selector(ViewController.showActivityIndicator), for: .touchUpInside)
 	}
 	
-	func showActivityIndicator() {
-		
+	@objc func showActivityIndicator() {
 		muhButton.startAnimating()
-		
-		let t = dispatch_time(DISPATCH_TIME_NOW, Int64(5 * Double(NSEC_PER_SEC)))
-		dispatch_after(t, dispatch_get_main_queue(), {
-			self.muhButton.stopAnimating()
-		})
 	}
 
 }
